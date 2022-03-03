@@ -1,23 +1,33 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer class="secondary" v-model="drawer" app>
-      <!--  -->
+      <!-- 사이드바 -->
       <v-list-item class="primary">
         <v-list-item-content>
-          <v-list-item-title class="white--text" id="menu-font"
-            >Soomin Hwang</v-list-item-title
-          >
+          <v-list-item-title class="white--text" id="menu-font">
+            <v-row
+              ><v-col>Guest</v-col>
+              <v-col
+                ><v-icon class="text-right white--text ml-15"
+                  >mdi-login</v-icon
+                ></v-col
+              ></v-row
+            >
+          </v-list-item-title>
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
       <v-list dense>
         <v-list-item v-for="item in items" :key="item.title" link>
           <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon color="primary">{{ item.icon }}</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title color="primary">{{
+              item.title
+            }}</v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -29,7 +39,7 @@
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
 
-      <v-toolbar-title class="white--text">Lajancia</v-toolbar-title>
+      <v-toolbar-title class="white--text text-right">Lajancia</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
@@ -71,10 +81,10 @@ export default {
   data: () => ({
     drawer: false,
     items: [
-      { title: "Home", icon: "mdi-view-dashboard" },
-      { title: "GitBlog", icon: "mdi-view-dashboard" },
-      { title: "Gallery", icon: "mdi-forum" },
-      { title: "Resume", icon: "mdi-forum" },
+      { title: "Home", icon: "mdi-home" },
+      { title: "GitBlog", icon: "mdi-post-outline" },
+      { title: "Gallery", icon: "mdi-picture-in-picture-bottom-right" },
+      { title: "Resume", icon: "mdi-file-account" },
       { title: "Projects", icon: "mdi-forum" },
     ],
   }),
