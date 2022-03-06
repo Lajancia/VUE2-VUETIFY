@@ -11,7 +11,16 @@ module.exports = {
     rules: [{
       test: /\.vue$/,
       loader: 'vue-loader',
-    }],
+      },
+       {
+            test: /\.(png|jpg|jpeg|gif|svg)(\?.*)?$/,
+            use: [
+                'url-loader?name=assets/[name].[ext]',
+            ]
+        }],
+    },
+   resolve: {
+    extensions: [".tsx", ".ts", ".js"]
   },
   plugins: [
     new VueLoaderPlugin(),

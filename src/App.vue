@@ -17,19 +17,82 @@
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
+
+      <!-- sidebar menu -->
       <v-list dense>
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item link>
           <v-list-item-icon>
-            <v-icon color="primary">{{ item.icon }}</v-icon>
+            <v-icon color="primary">mdi-home</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title color="primary">{{
-              item.title
-            }}</v-list-item-title>
+            <v-list-item-title color="primary">
+              <a href="/">Home</a>
+            </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
           </v-list-item-content>
         </v-list-item>
+        <v-list-item link>
+          <v-list-item-icon>
+            <v-icon color="primary">mdi-post-outline</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title color="primary">
+              <a href="https://lajancia.github.io/">Gitblog</a>
+            </v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-icon>
+            <v-icon color="primary">mdi-picture-in-picture-bottom-right</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title color="primary">
+              <router-link to=/gallery>Gallery</router-link>
+            </v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-icon>
+            <v-icon color="primary">mdi-file-account</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title color="primary">
+              <router-link to=/resume>Resume</router-link>
+            </v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-icon>
+            <v-icon color="primary">mdi-forum</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title color="primary">
+              <router-link to=/resume>Projects</router-link>
+            </v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-icon>
+            <v-icon color="primary">mdi-forum</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title color="primary">
+              <router-link to=/resume>Achievement</router-link>
+            </v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
+          </v-list-item-content>
+        </v-list-item>
+
       </v-list>
     </v-navigation-drawer>
 
@@ -38,21 +101,16 @@
         class="white--text"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-
-      <v-toolbar-title class="white--text text-right">Lajancia</v-toolbar-title>
+      <v-spacer />
+      <v-toolbar-title class="white--text mr-10">Lajancia</v-toolbar-title>
+      <v-spacer />
     </v-app-bar>
 
     <v-main>
       <!--  -->
       <router-view></router-view>
     </v-main>
-    <v-footer color="primary lighten-1" padless>
-      <v-row justify="center" no-gutters>
-        <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
-          <strong>Lajancia</strong> - kie6974@naver.com
-        </v-col>
-      </v-row>
-    </v-footer>
+   
   </v-app>
 </template>
 <style>
@@ -64,6 +122,7 @@
   /* overflow: hidden !important;
   scrollbar-width: none;
   -ms-overflow-style: none; */
+  text-decoration: none;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -81,11 +140,19 @@ export default {
   data: () => ({
     drawer: false,
     items: [
-      { title: "Home", icon: "mdi-home" },
-      { title: "GitBlog", icon: "mdi-post-outline" },
-      { title: "Gallery", icon: "mdi-picture-in-picture-bottom-right" },
-      { title: "Resume", icon: "mdi-file-account" },
-      { title: "Projects", icon: "mdi-forum" },
+      { title: "Home", icon: "mdi-home", url: "/" },
+      {
+        title: "GitBlog",
+        icon: "mdi-post-outline",
+        url: "https://lajancia.github.io/",
+      },
+      {
+        title: "Gallery",
+        icon: "mdi-picture-in-picture-bottom-right",
+        url: "/about",
+      },
+      { title: "Resume", icon: "mdi-file-account", url: "/resume" },
+      { title: "Projects", icon: "mdi-forum", url: "/projects" },
     ],
   }),
 };
