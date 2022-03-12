@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)?lajanciadev.com$
+RewriteCond %{REQUEST_URI} !^/dist/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /dist/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?lajanciadev.com$
+
+RewriteRule ^(/)?$ dist/index.html [L]
+</IfModule>
