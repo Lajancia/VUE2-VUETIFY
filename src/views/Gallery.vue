@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <carousel id="container">
       <slide>
         <img id="image" src="~@/assets/pictures/lantern.png" />
@@ -11,7 +11,7 @@
         <img id="image" src="~@/assets/pictures/lantern.png" />
       </slide>
     </carousel>
-  </div>
+  </v-container>
 </template>
 <script>
 import { Carousel, Slide } from "vue-snap";

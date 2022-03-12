@@ -102,7 +102,8 @@
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-spacer />
-      <v-toolbar-title class="white--text mr-10">Lajancia</v-toolbar-title>
+      <v-toolbar-title class="mr-10">
+       <a class= "white--text " href="/">Lajancia</a></v-toolbar-title>
       <v-spacer />
     </v-app-bar>
 
