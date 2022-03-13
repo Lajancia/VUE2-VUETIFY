@@ -75,7 +75,7 @@
 
           <v-list-item-content>
             <v-list-item-title color="primary">
-              <router-link to=/resume>Projects</router-link>
+              <router-link to=/projects>Projects</router-link>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
           </v-list-item-content>

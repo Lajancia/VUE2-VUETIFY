@@ -68,6 +68,11 @@
         </a>
       </v-col>
     </v-row>
+    <a href="https://lajancia.github.io/"
+      ><v-btn fab dark large color="secondary" fixed right bottom>
+        <v-icon color="white">mdi-post-outline</v-icon>
+      </v-btn></a
+    >
   </div>
 </template>
 
