@@ -87,7 +87,7 @@
 
           <v-list-item-content>
             <v-list-item-title color="text">
-              <router-link to=/resume>Achievement</router-link>
+              <router-link to=/resume>Activity</router-link>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
           </v-list-item-content>

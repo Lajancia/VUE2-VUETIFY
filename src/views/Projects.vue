@@ -230,17 +230,22 @@
               </v-expand-transition>
             </v-img>
             <v-card-text class="pt-6" style="position: relative">
-              <v-btn
-                absolute
-                color="#2978b5"
-                class="white--text"
-                fab
-                large
-                right
-                top
+              <a
+                href="https://freezing-honeycup-f3c.notion.site/bf465342ff7246fe8c4a73945e6ccb87"
               >
-                <v-icon color="white">mdi-post-outline</v-icon>
-              </v-btn>
+                <v-btn
+                  absolute
+                  color="#2978b5"
+                  class="white--text"
+                  fab
+                  large
+                  right
+                  top
+                >
+                  <v-icon color="white">mdi-post-outline</v-icon>
+                </v-btn>
+              </a>
+
               <div class="font-weight-light grey--text text-h6 mb-2">
                 브로드웨이브
               </div>
