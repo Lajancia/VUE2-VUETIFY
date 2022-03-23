@@ -2,19 +2,19 @@
   <body>
     <v-container class="m-5">
       <v-col cols="12" id="main">
-        <div class="secondary--text">About</div>
-        <span class="white--text">Soomin Hwang</span>
+        <div class="text--text">About</div>
+        <span class="accent--text">Soomin Hwang</span>
       </v-col>
 
       <v-col cols="12">
-        <div class="white--text">
+        <div class="text--text">
           <!-- <div class="secondary--text">Introduce</div>
           <div>
             안녕하세요. 행동력 있고 계획적인 백엔드 개발자를 꿈꾸는 황수민
             입니다.
           </div>
           <br /> -->
-          <div class="secondary--text">Education</div>
+          <div class="accent--text">Education</div>
           <div>
             한국외국어대학교 (2018 ~ 2021년 6월) | 컴퓨터전자시스템공학부
             (전공심화) 스페인통번역학과 (부전공)
@@ -25,12 +25,12 @@
             기술 융합 과정
           </div>
           <br />
-          <div class="secondary--text">Certification</div>
+          <div class="accent--text">Certification</div>
           <div>데이터 분석 준전문가(ADSP)</div>
           <div>Azure-900</div>
           <div>Toeic 845</div>
           <br />
-          <div class="secondary--text">Stacks</div>
+          <div class="accent--text">Stacks</div>
           <div>
             Frontend: HTML, CSS, Vue.js, javascript
             <br />
@@ -43,7 +43,7 @@
             Other: Blender, Procreate
           </div>
           <br />
-          <div class="secondary--text">Projects</div>
+          <div class="accent--text">Projects</div>
           <div>
             <div></div>
             <div>This Website</div>
@@ -52,20 +52,20 @@
             <div>코멘토 직무부트캠프 - 인공지능 서비스 기획 및 개발</div>
           </div>
           <br />
-          <div class="secondary--text">Intern</div>
+          <div class="accent--text">Intern</div>
           <div>
-            <a id="activity" class="white--text" href="http://common-mag.com/"
+            <a id="activity" class="text--text" href="http://common-mag.com/"
               >COMMON-MAGAZIE fullstack programmer</a
             >
 
             <br />
           </div>
           <br />
-          <div class="secondary--text">Activities</div>
+          <div class="accent--text">Activities</div>
           <div>
             <a
               id="activity"
-              class="white--text"
+              class="text--text"
               href="https://book.naver.com/bookdb/book_detail.nhn?bid=17807167"
               >동화 작가 - 라젠시아</a
             >
@@ -73,7 +73,7 @@
 
             <a
               id="activity"
-              class="white--text"
+              class="text--text"
               href="https://grafolio.naver.com/kie6974"
               >Illustrator - 라젠시아</a
             >

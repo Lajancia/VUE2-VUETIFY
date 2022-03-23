@@ -11,7 +11,7 @@
               <v-expand-transition>
                 <div
                   v-if="hover"
-                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
+                  class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
                   style="height: 100%"
                 >
                   $14.99
@@ -21,19 +21,19 @@
             <v-card-text class="pt-6" style="position: relative">
               <v-btn
                 absolute
-                color="orange"
+                color="#2978b5"
                 class="white--text"
                 fab
                 large
                 right
                 top
               >
-                <v-icon>mdi-cart</v-icon>
+                <v-icon color="white">mdi-post-outline</v-icon>
               </v-btn>
               <div class="font-weight-light grey--text text-h6 mb-2">
                 For the perfect meal
               </div>
-              <h3 class="text-h4 font-weight-light orange--text mb-2">
+              <h3 class="text-h4 font-weight-light accent--text mb-2">
                 QW cooking utensils
               </h3>
               <div class="font-weight-light text-h6 mb-2">
@@ -54,7 +54,7 @@
               <v-expand-transition>
                 <div
                   v-if="hover"
-                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
+                  class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
                   style="height: 100%"
                 >
                   $14.99
@@ -64,19 +64,19 @@
             <v-card-text class="pt-6" style="position: relative">
               <v-btn
                 absolute
-                color="orange"
+                color="#2978b5"
                 class="white--text"
                 fab
                 large
                 right
                 top
               >
-                <v-icon>mdi-cart</v-icon>
+                <v-icon color="white">mdi-post-outline</v-icon>
               </v-btn>
               <div class="font-weight-light grey--text text-h6 mb-2">
                 For the perfect meal
               </div>
-              <h3 class="text-h4 font-weight-light orange--text mb-2">
+              <h3 class="text-h4 font-weight-light accent--text mb-2">
                 QW cooking utensils
               </h3>
               <div class="font-weight-light text-h6 mb-2">
@@ -98,7 +98,7 @@
               <v-expand-transition>
                 <div
                   v-if="hover"
-                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal text-h2 white--text"
+                  class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
                   style="height: 100%"
                 >
                   $14.99
@@ -108,19 +108,19 @@
             <v-card-text class="pt-6" style="position: relative">
               <v-btn
                 absolute
-                color="orange"
+                color="#2978b5"
                 class="white--text"
                 fab
                 large
                 right
                 top
               >
-                <v-icon>mdi-cart</v-icon>
+                <v-icon color="white">mdi-post-outline</v-icon>
               </v-btn>
               <div class="font-weight-light grey--text text-h6 mb-2">
                 For the perfect meal
               </div>
-              <h3 class="text-h4 font-weight-light orange--text mb-2">
+              <h3 class="text-h4 font-weight-light accent--text mb-2">
                 QW cooking utensils
               </h3>
               <div class="font-weight-light text-h6 mb-2">

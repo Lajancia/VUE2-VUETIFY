@@ -1,14 +1,14 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer class="secondary" v-model="drawer" app>
+    <v-navigation-drawer class="accent" v-model="drawer" app>
       <!-- 사이드바 -->
       <v-list-item class="primary">
         <v-list-item-content>
-          <v-list-item-title class="white--text" id="menu-font">
+          <v-list-item-title class="text--text" id="menu-font">
             <v-row
               ><v-col>Guest</v-col>
               <v-col
-                ><v-icon class="text-right white--text ml-15"
+                ><v-icon class="text-right text--text ml-15"
                   >mdi-login</v-icon
                 ></v-col
               ></v-row
@@ -38,7 +38,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title color="primary">
+            <v-list-item-title color="text">
               <a href="https://lajancia.github.io/">Gitblog</a>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
@@ -50,7 +50,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title color="primary">
+            <v-list-item-title color="text">
               <router-link to=/gallery>Gallery</router-link>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
@@ -62,7 +62,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title color="primary">
+            <v-list-item-title color="text">
               <router-link to=/resume>Resume</router-link>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
@@ -74,7 +74,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title color="primary">
+            <v-list-item-title color="text">
               <router-link to=/projects>Projects</router-link>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
@@ -86,7 +86,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title color="primary">
+            <v-list-item-title color="text">
               <router-link to=/resume>Achievement</router-link>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
@@ -96,14 +96,14 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app class="primary">
+    <v-app-bar app class="primary elevation-0">
       <v-app-bar-nav-icon
-        class="white--text"
+        class="black--text"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-spacer />
       <v-toolbar-title class="mr-10">
-       <a class= "white--text " href="/">Lajancia</a></v-toolbar-title>
+       <a class= "text--text" href="/">Lajancia</a></v-toolbar-title>
       <v-spacer />
     </v-app-bar>
 
@@ -129,11 +129,7 @@
   display: none;
 }
 #inspire {
-  background: linear-gradient(to right, #0f2027, #2c5364);
-  /* background: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/organic-1280537_1280.jpg") */
-  /* no-repeat center center; */
-  background-size: cover;
-  /* background-color: red; */
+
 }
 </style>
 <script>
