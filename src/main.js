@@ -11,11 +11,12 @@ import * as mdijs from '@mdi/js'
 // import VueCarousel from 'vue-carousel';
 import VueSnap from 'vue-snap'
 import 'vue-snap/dist/vue-snap.css'
-
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // Vue.use(VueCarousel);
 // Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 Vue.use(VueSnap)
+Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 Vue.use(mdiVue, {
   icons: mdijs

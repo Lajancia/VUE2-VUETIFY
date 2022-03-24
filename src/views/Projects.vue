@@ -48,7 +48,7 @@
                 Single-SPA, VScode
                 <br />
                 활동 내용 : webpack module federation을 이용하여
-                마이크로프론트엔드 아키텍쳐 쳐 댓글 컴포넌트 개발
+                마이크로프론트엔드 아키텍쳐 댓글 컴포넌트 개발
               </div>
             </v-card-text>
           </v-card>
@@ -249,12 +249,14 @@
               <div class="font-weight-light grey--text text-h6 mb-2">
                 브로드웨이브
               </div>
-              <h3 class="text-h4 font-weight-light accent--text mb-2">
-                QW cooking utensils
+              <h3 class="text-h6 font-weight-light accent--text mb-2">
+                웹페이지 이미지, 아이콘 디자인
               </h3>
-              <div class="font-weight-light text-h6 mb-2">
-                Our Vintage kitchen utensils delight any chef.<br />
-                Made of bamboo by hand
+              <div class="font-weight-light text-h8 mb-2">
+                외주 의뢰자 : 브로드웨이브
+                <br />
+                외주 내용 : 건설 119 웹페이지 제작과 UBMS 웹페이지 제작에 사용될
+                이미지와 로고 디자인.
               </div>
             </v-card-text>
           </v-card>
@@ -274,40 +276,96 @@
                   class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
                   style="height: 100%"
                 >
-                  Team
+                  Private
                 </div>
               </v-expand-transition>
             </v-img>
             <v-card-text class="pt-6" style="position: relative">
-              <v-btn
-                absolute
-                color="#2978b5"
-                class="white--text"
-                fab
-                large
-                right
-                top
-              >
-                <v-icon color="white">mdi-post-outline</v-icon>
-              </v-btn>
-              <div class="font-weight-light grey--text text-h6 mb-2">
-                For the perfect meal
-              </div>
-              <h3 class="text-h4 font-weight-light accent--text mb-2">
-                QW cooking utensils
-              </h3>
-              <div class="font-weight-light text-h6 mb-2">
-                Our Vintage kitchen utensils delight any chef.<br />
-                Made of bamboo by hand
+              <a href="http://park.lajanciadev.com/">
+                <v-btn
+                  absolute
+                  color="#2978b5"
+                  class="white--text"
+                  fab
+                  large
+                  right
+                  top
+                >
+                  <v-icon color="white">mdi-post-outline</v-icon>
+                </v-btn>
+              </a>
+
+              <div class="font-weight-light grey--text text-h6 mb-2">WebGL</div>
+              <h3 class="text-h6 font-weight-light accent--text mb-2">PARK</h3>
+              <div class="font-weight-light text-h8 mb-2">
+                3D 모델링을 통해 구현한 공원을 WebGL을 이용하여 웹페이지 상에
+                올려 동작할 수 있게 구현하였다.
+                <br />
+                (IOS 이슈로 인해 아이폰 사용자는 웹페이지 방문을 삼가해주시기
+                바랍니다.)
               </div>
             </v-card-text>
           </v-card>
         </v-hover></v-col
       >
+      <v-col id="card" class="pa-2" cols="12" sm="4">
+        <v-hover v-slot="{ hover }">
+          <v-card class="mx-auto" color="grey lighten-4" max-width="600">
+            <v-img
+              :aspect-ratio="16 / 9"
+              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+            >
+              <v-expand-transition>
+                <div
+                  v-if="hover"
+                  class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
+                  style="height: 100%"
+                >
+                  Private
+                </div>
+              </v-expand-transition>
+            </v-img>
+            <v-card-text class="pt-6" style="position: relative">
+              <a href="http://shoes.lajanciadev.com/"
+                ><v-btn
+                  absolute
+                  color="#2978b5"
+                  class="white--text"
+                  fab
+                  large
+                  right
+                  top
+                >
+                  <v-icon color="white">mdi-post-outline</v-icon>
+                </v-btn></a
+              >
+
+              <div class="font-weight-light grey--text text-h6 mb-2">
+                WebGL+Tailwindcss
+              </div>
+              <h3 class="text-h6 font-weight-light accent--text mb-2">Shoes</h3>
+              <div class="font-weight-light text-h8 mb-2">
+                프로젝트 목적 : 이전 프로젝트 Park보다 조금 더 개선된 형태로 3D
+                모델링을 웹페이지에 배포해본다.
+                <br />
+                사용 프로그램 : HTML, WebGL, Blender, Tailwindcss
+                <br />
+                (IOS 이슈로 인해 아이폰 사용자는 웹페이지 방문을 삼가해주시기
+                바랍니다.)
+              </div>
+            </v-card-text>
+          </v-card>
+        </v-hover>
+      </v-col>
     </v-row>
   </v-container>
 </template>
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+* {
+  font-family: "Do Hyeon", sans-serif;
+}
 .v-card--reveal {
   align-items: center;
   bottom: 0;

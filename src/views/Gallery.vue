@@ -1,88 +1,70 @@
 <template>
-  <v-container>
-    <carousel class="hidden-sm-and-down" id="container">
-      <slide>
-        <img id="image" src="~@/assets/pictures/img7.jpeg" />
-      </slide>
-      <slide>
-        <img id="image" src="~@/assets/pictures/img2.jpeg" />
-      </slide>
-      <slide>
-        <img id="image" src="~@/assets/pictures/img3.jpeg" />
-      </slide>
-      <slide>
-        <img id="image" src="~@/assets/pictures/img4.jpeg" />
-      </slide>
-      <slide>
-        <img id="image" src="~@/assets/pictures/img5.jpeg" />
-      </slide>
-      <slide>
-        <img id="image" src="~@/assets/pictures/img8.png" />
-      </slide>
-    </carousel>
-    <v-carousel class="hidden-sm-and-up" :show-arrows="false" hide-delimiters>
-      <v-carousel-item>
-        <img id="image" src="~@/assets/pictures/img7.jpeg" />
-      </v-carousel-item>
-      <v-carousel-item>
-        <img id="image" src="~@/assets/pictures/img2.jpeg" />
-      </v-carousel-item>
-      <v-carousel-item>
-        <img id="image" src="~@/assets/pictures/img3.jpeg" />
-      </v-carousel-item>
-      <v-carousel-item>
-        <img id="image" src="~@/assets/pictures/img4.jpeg" />
-      </v-carousel-item>
-      <v-carousel-item>
-        <img id="image" src="~@/assets/pictures/img5.jpeg" />
-      </v-carousel-item>
-      <v-carousel-item>
-        <img id="image" src="~@/assets/pictures/img8.png" />
-      </v-carousel-item>
-    </v-carousel>
-    <a href="https://grafolio.naver.com/kie6974"
-      ><v-btn fab dark large color="secondary" fixed right bottom>
-        <v-icon color="white">mdi-picture-in-picture-bottom-right</v-icon>
-      </v-btn></a
-    >
-  </v-container>
+  <div>
+    <v-container>
+      <!-- first row -->
+      <v-row no-gutters>
+        <!-- issue 1 -->
+        <v-col id="card" class="pa-2" cols="12" sm="4">
+          <router-link to="/blender">
+            <v-img
+              id="image"
+              contain
+              :aspect-ratio="9 / 13"
+              src="~@/assets/Gallery/3D/img20.jpeg"
+            >
+            </v-img>
+          </router-link>
+        </v-col>
+        <!-- issue 2 -->
+        <v-col id="card" class="pa-2" cols="12" sm="4">
+          <router-link to="/book">
+            <v-img
+              id="image"
+              contain
+              :aspect-ratio="9 / 13"
+              src="~@/assets/Gallery/Book/img19.jpeg"
+            >
+            </v-img>
+          </router-link>
+        </v-col>
+        <v-col id="card" class="pa-2" cols="12" sm="4">
+          <router-link to="/game">
+            <v-img
+              id="image"
+              contain
+              :aspect-ratio="9 / 13"
+              src="~@/assets/Gallery/Destiny2/img7.jpeg"
+            >
+            </v-img>
+          </router-link>
+        </v-col>
+        <v-col id="card" class="pa-2" cols="12" sm="4">
+          <router-link to="/journey">
+            <v-img
+              id="image"
+              contain
+              :aspect-ratio="9 / 13"
+              src="~@/assets/Gallery/journey/img5.webp"
+            >
+            </v-img>
+          </router-link>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
-<script>
-// import { Carousel, Slide } from "vue-snap";
-import "vue-snap/dist/vue-snap.css";
-export default {
-  components: {
-    // Carousel,
-    // Slide,
-  },
-  carouselAnimation: {
-    showButtons: false,
-  },
-};
-</script>
+
 <style scoped>
-.carousel-control-next {
-  display: hidden;
-}
-.heroCarousel .slick-next,
-.heroCarousel .slick-prev,
-.heroCarousel .slick-dots {
-  display: none !important;
-}
-.carousel .carousel-control {
-  visibility: hidden;
-}
-.carousel-control {
-  opacity: 0;
-}
-a[class$="carousel-control"] {
+::-webkit-scrollbar {
   display: none;
 }
 
-.container {
-  height: 100vh;
-}
-#image {
-  height: 90vh;
+.footer {
+  font-size: 0.85rem;
 }
 </style>
+<script>
+export default {
+  setup() {},
+};
+</script>

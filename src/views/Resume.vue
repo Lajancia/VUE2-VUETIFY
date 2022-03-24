@@ -2,8 +2,9 @@
   <body>
     <v-container class="m-5">
       <v-col cols="12" id="main">
-        <div class="text--text">About</div>
-        <span class="accent--text">Soomin Hwang</span>
+        <h1 class="text--text">
+          About <span class="accent--text">Soomin Hwang</span>
+        </h1>
       </v-col>
 
       <v-col cols="12">
@@ -14,7 +15,7 @@
             입니다.
           </div>
           <br /> -->
-          <div class="accent--text">Education</div>
+          <h2 class="accent--text">Education</h2>
           <div>
             한국외국어대학교 (2018 ~ 2021년 6월) | 컴퓨터전자시스템공학부
             (전공심화) 스페인통번역학과 (부전공)
@@ -25,12 +26,13 @@
             기술 융합 과정
           </div>
           <br />
-          <div class="accent--text">Certification</div>
+          <h2 class="accent--text">Certification</h2>
           <div>데이터 분석 준전문가(ADSP)</div>
           <div>Azure-900</div>
           <div>Toeic 845</div>
+          <div>Opic IM2</div>
           <br />
-          <div class="accent--text">Stacks</div>
+          <h2 class="accent--text">Stacks</h2>
           <div>
             Frontend: HTML, CSS, Vue.js, javascript
             <br />
@@ -43,7 +45,7 @@
             Other: Blender, Procreate
           </div>
           <br />
-          <div class="accent--text">Projects</div>
+          <h2 class="accent--text">Projects</h2>
           <div>
             <div></div>
             <div>This Website</div>
@@ -52,16 +54,16 @@
             <div>코멘토 직무부트캠프 - 인공지능 서비스 기획 및 개발</div>
           </div>
           <br />
-          <div class="accent--text">Intern</div>
+          <h2 class="accent--text">Intern</h2>
           <div>
             <a id="activity" class="text--text" href="http://common-mag.com/"
-              >COMMON-MAGAZIE fullstack programmer</a
+              >COMMON-MAGAZINE fullstack programmer</a
             >
 
             <br />
           </div>
           <br />
-          <div class="accent--text">Activities</div>
+          <h2 class="accent--text">Activities</h2>
           <div>
             <a
               id="activity"
