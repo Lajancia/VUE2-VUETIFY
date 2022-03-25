@@ -1,118 +1,63 @@
 <template>
   <div>
-    <swiper ref="filterSwiper" :options="swiperOption">
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img1.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img2.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img3.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img4.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img5.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img6.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img7.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img8.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img9.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img10.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img11.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img12.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img13.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img14.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img15.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img16.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img17.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img18.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img19.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img20.jpeg" alt="pg1"
-      /></swiper-slide>
-      <swiper-slide
-        ><img src="~@/assets/Gallery/3D/img21.jpeg" alt="pg1"
-      /></swiper-slide>
-    </swiper>
+    <div ref="filterSwiper">
+      <div v-for="i in 21" :key="i">
+        <img :src="require('@/assets/Gallery/3D/img' + i + '.jpeg')" />
+      </div>
+      <!-- <swiper-slide
+        ><img src="~@/assets/Gallery/Book/img1.jpeg" alt="pg1"
+      /></swiper-slide> -->
+    </div>
   </div>
 </template>
 
 <script>
-import { swiper, swiperSlide } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
+// import { swiper, swiperSlide } from "vue-awesome-swiper";
+// import "swiper/css/swiper.css";
 
-export default {
-  name: "FilterSwiper",
-  data() {
-    return {
-      swiperOption: {
-        loop: true,
-        slidesPerView: "auto",
-        direction: "vertical",
-        mousewheel: {
-          invert: false,
-        },
-        spaceBetween: 0,
-        // slidesOffsetBefore: 0,
-        // slidesOffsetAfter: 0,
-        freeMode: true,
-        // centerInsufficientSlides: true,
-      },
-    };
-  },
-  components: {
-    swiper,
-    swiperSlide,
-  },
-};
+// export default {
+//   name: "FilterSwiper",
+
+//   data() {
+//     return {
+//       swiperOption: {
+//         loop: true,
+//         slidesPerView: "auto",
+//         direction: "vertical",
+//         mousewheel: {
+//           invert: false,
+//         },
+//         spaceBetween: 0,
+//         slidesOffsetBefore: 0,
+//         slidesOffsetAfter: 0,
+//         freeMode: true,
+//         centerInsufficientSlides: true,
+//       },
+//     };
+//   },
+//   components: {
+//     swiper,
+//     swiperSlide,
+//   },
+// };
 </script>
 <style lang="scss" scoped>
+img {
+  width: 70%;
+}
+div {
+  text-align: center;
+}
 .swiper-container {
-  // padding: 0 0px;
+  padding: 0 0px;
 
   .swiper-wrapper {
     .swiper-slide {
       width: auto;
 
-      text-align: center;
-
       appearance: none;
 
-      img {
-        width: 70%;
-      }
-      video {
+      i video {
         height: 93vh;
       }
     }
