@@ -13,7 +13,7 @@
         </div>
       </v-col>
       <v-col cols="12">
-        <div>
+        <div class="text--text">
           <h1>
             I'M
             <span
@@ -26,7 +26,7 @@
       </v-col>
 
       <v-col cols="12">
-        <div class="sentence text--text">
+        <div id="sentence" class="sentence text--text">
           This Webpage is for various private front end test and back end test.
           Have displayed 3D modeling and illustrations, js aninations, project
           summaries and so on. You can freely check out the projects and arts
@@ -39,39 +39,41 @@
         <v-col id="card" class="pa-2" cols="12" sm="4">
           <v-hover v-slot="{ hover }">
             <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-              <v-img
-                :aspect-ratio="16 / 9"
-                src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-              >
+              <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img6.jpg">
                 <v-expand-transition>
                   <div
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
                     style="height: 100%"
                   >
-                    $14.99
+                    Intern
                   </div>
                 </v-expand-transition>
               </v-img>
               <v-card-text class="pt-6" style="position: relative">
-                <v-btn
-                  absolute
-                  color="#2978b5"
-                  class="white--text"
-                  fab
-                  large
-                  right
-                  top
+                <a
+                  href="https://freezing-honeycup-f3c.notion.site/Frontend-Backend-Developer-03dbe6b96de1492fa63fc4fec04f063a"
                 >
-                  <v-icon color="white">mdi-post-outline</v-icon>
-                </v-btn>
+                  <v-btn
+                    absolute
+                    color="#2978b5"
+                    class="white--text"
+                    fab
+                    large
+                    right
+                    top
+                  >
+                    <v-icon color="white">mdi-post-outline</v-icon>
+                  </v-btn>
+                </a>
+
                 <div class="font-weight-light grey--text text-h6 mb-2">
-                  For the perfect meal
+                  COMMON MAGAZINE
                 </div>
-                <h3 class="text-h4 font-weight-light accent--text mb-2">
-                  QW cooking utensils
+                <h3 class="text-h6 font-weight-light accent--text mb-2">
+                  웹사이트 개발자 인턴
                 </h3>
-                <div class="font-weight-light text-h6 mb-2">
+                <div class="font-weight-light text-h8 mb-2">
                   Our Vintage kitchen utensils delight any chef.<br />
                   Made of bamboo by hand
                 </div>
@@ -82,92 +84,111 @@
         <v-col id="card" class="pa-2" cols="12" sm="4">
           <v-hover v-slot="{ hover }">
             <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-              <v-img
-                :aspect-ratio="16 / 9"
-                src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-              >
+              <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img4.jpg">
                 <v-expand-transition>
                   <div
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
                     style="height: 100%"
                   >
-                    $14.99
+                    Private
                   </div>
                 </v-expand-transition>
               </v-img>
               <v-card-text class="pt-6" style="position: relative">
-                <v-btn
-                  absolute
-                  color="#2978b5"
-                  class="white--text"
-                  fab
-                  large
-                  right
-                  top
-                >
-                  <v-icon color="white">mdi-post-outline</v-icon>
-                </v-btn>
+                <a href="https://lajancia.github.io//vue9/">
+                  <v-btn
+                    absolute
+                    color="#2978b5"
+                    class="white--text"
+                    fab
+                    large
+                    right
+                    top
+                  >
+                    <v-icon color="white">mdi-post-outline</v-icon>
+                  </v-btn>
+                </a>
+
                 <div class="font-weight-light grey--text text-h6 mb-2">
-                  For the perfect meal
+                  PORTFOLIO WEBSITE
                 </div>
-                <h3 class="text-h4 font-weight-light accent--text mb-2">
-                  QW cooking utensils
+                <h3 class="text-h6 font-weight-light accent--text mb-2">
+                  풀스텍 웹사이트 개발 및 배포
                 </h3>
-                <div class="font-weight-light text-h6 mb-2">
-                  Our Vintage kitchen utensils delight any chef.<br />
-                  Made of bamboo by hand
+                <div class="font-weight-light text-h8 mb-2">
+                  사용 프로그램 : vue.js, node.js, webpack, WebGL, Three.js,
+                  VScode, Hostinger Shared Hosting
+                  <br />
+                  활동 내용 :
+                  <br />
+                  현재까지 로컬 호스트에서 개발한 프로젝트를 구입한 도메인과 웹
+                  프로바이더를 통해 온라인 상에서 동작 가능하게 만들어본다.
+                  <br />
+                  다양한 프론트엔드, 백엔드 테스트를 통해 웹 개발에 필요한
+                  것들을 공부한다.
                 </div>
               </v-card-text>
             </v-card>
           </v-hover>
         </v-col>
 
-        <v-col id="card" class="pa-2" cols="12" sm="4"
-          ><v-hover v-slot="{ hover }">
+        <v-col id="card" class="pa-2" cols="12" sm="4">
+          <v-hover v-slot="{ hover }">
             <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-              <v-img
-                :aspect-ratio="16 / 9"
-                src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-              >
+              <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img5.jpg">
                 <v-expand-transition>
                   <div
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out accent darken-2 v-card--reveal text-h2 white--text"
                     style="height: 100%"
                   >
-                    $14.99
+                    Team
                   </div>
                 </v-expand-transition>
               </v-img>
               <v-card-text class="pt-6" style="position: relative">
-                <v-btn
-                  absolute
-                  color="#2978b5"
-                  class="white--text"
-                  fab
-                  large
-                  right
-                  top
+                <a href="https://lajancia.github.io//webpack-modulefederation/"
+                  ><v-btn
+                    absolute
+                    color="#2978b5"
+                    class="white--text"
+                    fab
+                    large
+                    right
+                    top
+                  >
+                    <v-icon color="white">mdi-post-outline</v-icon>
+                  </v-btn></a
                 >
-                  <v-icon color="white">mdi-post-outline</v-icon>
-                </v-btn>
+
                 <div class="font-weight-light grey--text text-h6 mb-2">
-                  For the perfect meal
+                  CAPSTONE DESIGN
                 </div>
-                <h3 class="text-h4 font-weight-light accent--text mb-2">
-                  QW cooking utensils
+                <h3 class="text-h6 font-weight-light accent--text mb-2">
+                  Micro-Frontend UI/UX 프레임워크 구축
                 </h3>
-                <div class="font-weight-light text-h6 mb-2">
-                  Our Vintage kitchen utensils delight any chef.<br />
-                  Made of bamboo by hand
+                <div class="font-weight-light text-h8 mb-2">
+                  프로젝트 주관 : 한국외국어대학교 기업 연계
+                  <br />
+                  협업 기업 : 애버커스
+                  <br />
+                  사용 프로그램 : vue.js, webpack, element ui, tailwindcss,
+                  Single-SPA, VScode
+                  <br />
+                  활동 내용 : webpack module federation을 이용하여
+                  마이크로프론트엔드 아키텍쳐 댓글 컴포넌트 개발
                 </div>
               </v-card-text>
             </v-card>
-          </v-hover></v-col
-        >
+          </v-hover>
+        </v-col>
       </v-row>
-
+      <v-col cols="12" class="text--text"
+        >
+        <router-link to=/projects><v-btn class="ma-2" color="accent"> And More... </v-btn></router-link>
+        </v-col
+      >
       <v-row no-gutters>
         <v-col id="main1" class="text--text" cols="12">SKILLS</v-col>
         <v-col cols="12"
@@ -393,6 +414,12 @@ window.onload = function () {
     top: -180px;
   }
 }
+#sentence {
+  margin-left: 5vh;
+  margin-right: 5vh;
+  text-align: left;
+}
+
 #dynamic-txts li::after {
   content: "";
   position: absolute;

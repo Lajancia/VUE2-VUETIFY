@@ -4,10 +4,7 @@
       <v-col id="card" class="pa-2" cols="12" sm="4">
         <v-hover v-slot="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-            <v-img
-              :aspect-ratio="16 / 9"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-            >
+            <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img5.jpg">
               <v-expand-transition>
                 <div
                   v-if="hover"
@@ -57,10 +54,7 @@
       <v-col id="card" class="pa-2" cols="12" sm="4">
         <v-hover v-slot="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-            <v-img
-              :aspect-ratio="16 / 9"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-            >
+            <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img4.jpg">
               <v-expand-transition>
                 <div
                   v-if="hover"
@@ -112,10 +106,7 @@
       <v-col id="card" class="pa-2" cols="12" sm="4"
         ><v-hover v-slot="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-            <v-img
-              :aspect-ratio="16 / 9"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-            >
+            <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img1.jpeg">
               <v-expand-transition>
                 <div
                   v-if="hover"
@@ -167,10 +158,7 @@
       <v-col id="card" class="pa-2" cols="12" sm="4">
         <v-hover v-slot="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-            <v-img
-              :aspect-ratio="16 / 9"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-            >
+            <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img6.jpg">
               <v-expand-transition>
                 <div
                   v-if="hover"
@@ -215,10 +203,7 @@
       <v-col id="card" class="pa-2" cols="12" sm="4">
         <v-hover v-slot="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-            <v-img
-              :aspect-ratio="16 / 9"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-            >
+            <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img7.png">
               <v-expand-transition>
                 <div
                   v-if="hover"
@@ -266,10 +251,7 @@
       <v-col id="card" class="pa-2" cols="12" sm="4"
         ><v-hover v-slot="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-            <v-img
-              :aspect-ratio="16 / 9"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-            >
+            <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img2.jpeg">
               <v-expand-transition>
                 <div
                   v-if="hover"
@@ -311,10 +293,7 @@
       <v-col id="card" class="pa-2" cols="12" sm="4">
         <v-hover v-slot="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
-            <v-img
-              :aspect-ratio="16 / 9"
-              src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
-            >
+            <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img3.jpeg">
               <v-expand-transition>
                 <div
                   v-if="hover"
