@@ -2,7 +2,7 @@
   <div>
     <swiper ref="filterSwiper" :options="swiperOption">
       <swiper-slide v-for="i in 3" :key="i">
-        <img :src="require('@/assets/Gallery/MR/img' + i + '.jpeg')" />
+        <img :src="require('@/assets/Gallery/MR/' + i + '.jpeg')" />
       </swiper-slide>
       <!-- <swiper-slide v-for="i in 7" :key="i">
         <img :src="require('@/assets/Gallery/journey/img' + i + '.webp')" />
@@ -26,6 +26,7 @@ export default {
       swiperOption: {
         loop: true,
         slidesPerView: "auto",
+        direction: "vertical",
         mousewheel: {
           invert: false,
         },
@@ -51,12 +52,12 @@ export default {
     .swiper-slide {
       width: auto;
 
-      padding: 0px 0px;
+      text-align: center;
 
       appearance: none;
 
       img {
-        height: 93vh;
+        width: 70%;
       }
       video {
         height: 93vh;

@@ -363,10 +363,14 @@ window.onload = function () {
 };
 </script>
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
 * {
   /* background-image: url("../assets/coffee.jpg"); */
   font-family: "Anton", sans-serif;
 }
+
 .v-card--reveal {
   align-items: center;
   bottom: 0;
@@ -396,6 +400,9 @@ window.onload = function () {
   text-align: left;
   margin-left: 15px;
   margin-right: 15px;
+}
+#card{
+  font-family: "Do Hyeon", sans-serif;
 }
 #main1 {
   font-size: 60px;

@@ -23,6 +23,7 @@ export default {
       swiperOption: {
         loop: true,
         slidesPerView: "auto",
+        direction: "vertical",
         mousewheel: {
           invert: false,
         },
@@ -48,12 +49,12 @@ export default {
     .swiper-slide {
       width: auto;
 
-      padding: 0px 0px;
+      text-align: center;
 
       appearance: none;
 
       img {
-        height: 93vh;
+        width: 70%;
       }
       video {
         height: 93vh;

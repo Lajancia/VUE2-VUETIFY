@@ -79,14 +79,15 @@ export default {
       swiperOption: {
         loop: true,
         slidesPerView: "auto",
+        direction: "vertical",
         mousewheel: {
           invert: false,
         },
         spaceBetween: 0,
-        slidesOffsetBefore: 0,
-        slidesOffsetAfter: 0,
+        // slidesOffsetBefore: 0,
+        // slidesOffsetAfter: 0,
         freeMode: true,
-        centerInsufficientSlides: true,
+        // centerInsufficientSlides: true,
       },
     };
   },
@@ -98,18 +99,18 @@ export default {
 </script>
 <style lang="scss" scoped>
 .swiper-container {
-  padding: 0 0px;
+  // padding: 0 0px;
 
   .swiper-wrapper {
     .swiper-slide {
       width: auto;
 
-      padding: 0px 0px;
+      text-align: center;
 
       appearance: none;
 
       img {
-        height: 93vh;
+        width: 70%;
       }
       video {
         height: 93vh;
