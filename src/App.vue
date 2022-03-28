@@ -87,7 +87,7 @@
 
           <v-list-item-content>
             <v-list-item-title color="text">
-              <router-link to=/resume>Activity</router-link>
+              <router-link to=/activity>Activity</router-link>
             </v-list-item-title>
             <!-- <mdicon name="playstation" /> -->
           </v-list-item-content>
@@ -168,9 +168,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
-#inspire {
 
-}
 </style>
 <script>
 export default {

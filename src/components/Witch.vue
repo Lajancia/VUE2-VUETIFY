@@ -17,7 +17,7 @@
 <script></script>
 <style lang="scss" scoped>
 img {
-  width: 70%;
+  height: 70%;
 }
 div {
   text-align: center;
