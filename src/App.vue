@@ -8,8 +8,23 @@
             <v-row
               ><v-col>Guest</v-col>
               <v-col
-                ><v-icon class="text-right text--text ml-15"
-                  >mdi-login</v-icon
+                >
+                <v-tooltip bottom>
+      <template v-slot:activator="{ on, attrs }">
+        <v-icon
+        class="text-right text--text ml-15"
+          
+          v-bind="attrs"
+          v-on="on"
+        >
+         mdi-login
+        </v-icon>
+      </template>
+      <span>This login was diactivated in this website due to the Hosting problem.</span>
+    </v-tooltip>
+                
+                <v-icon 
+                  ></v-icon
                 ></v-col
               ></v-row
             >
