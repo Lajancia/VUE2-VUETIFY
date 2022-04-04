@@ -115,6 +115,7 @@
   font-size: 1.2rem;
 }
 #image:hover {
+  transition: 0.5s ease;
   color: #2978b5;
 }
 

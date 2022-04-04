@@ -50,7 +50,7 @@
                   </div>
                 </v-expand-transition>
               </v-img>
-              <v-card-text class="pt-6" style="position: relative">
+              <v-card-text class="pt-6 text-left" style="position: relative">
                 <a
                   href="https://freezing-honeycup-f3c.notion.site/Frontend-Backend-Developer-03dbe6b96de1492fa63fc4fec04f063a"
                 >
@@ -81,7 +81,7 @@
             </v-card>
           </v-hover>
         </v-col>
-        <v-col id="card" class="pa-2" cols="12" sm="4">
+        <v-col id="card" class="pa-2 text-left" cols="12" sm="4">
           <v-hover v-slot="{ hover }">
             <v-card class="mx-auto" color="grey lighten-4" max-width="600">
               <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img4.jpg">
@@ -95,7 +95,7 @@
                   </div>
                 </v-expand-transition>
               </v-img>
-              <v-card-text class="pt-6" style="position: relative">
+              <v-card-text class="pt-6 " style="position: relative">
                 <a href="https://lajancia.github.io//vue9/">
                   <v-btn
                     absolute
@@ -133,7 +133,7 @@
           </v-hover>
         </v-col>
 
-        <v-col id="card" class="pa-2" cols="12" sm="4">
+        <v-col id="card" class="pa-2 text-left" cols="12" sm="4">
           <v-hover v-slot="{ hover }">
             <v-card class="mx-auto" color="grey lighten-4" max-width="600">
               <v-img :aspect-ratio="16 / 9" src="~@/assets/Projects/img5.jpg">
