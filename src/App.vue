@@ -6,11 +6,12 @@
         <v-list-item-content>
           <v-list-item-title class="text--text" id="menu-font">
             <v-row
-              ><v-col>Guest</v-col>
+              ><v-col v-if="$store.state.user">{{$store.state.user.nick}}</v-col>
+              <v-col v-else>Guest</v-col>
               <v-col
                 >
-                <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
+                <!-- <v-tooltip bottom> -->
+      <!-- <template v-slot:activator="{ on, attrs }">
         <v-icon
         class="text-right text--text ml-15"
           
@@ -21,7 +22,17 @@
         </v-icon>
       </template>
       <span>This login was diactivated in this website due to the Hosting problem.</span>
-    </v-tooltip>
+    </v-tooltip> -->
+    <router-link to=/indexpage>
+       <v-icon
+        class="text-right text--text ml-15"
+          
+          v-bind="attrs"
+          v-on="on"
+        >
+         mdi-login
+        </v-icon>
+    </router-link>
                 
                 <v-icon 
                   ></v-icon
