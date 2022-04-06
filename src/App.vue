@@ -236,7 +236,6 @@ export default {
     ],
   }),
   methods: {
-    
   handleLogout() {
     console.log("it works1")
   this.$store.commit("setUser", null);
