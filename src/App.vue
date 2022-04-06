@@ -10,29 +10,19 @@
               <v-col v-else>Guest</v-col>
               <v-col
                 >
-                <!-- <v-tooltip bottom> -->
-      <!-- <template v-slot:activator="{ on, attrs }">
-        <v-icon
-        class="text-right text--text ml-15"
-          
-          v-bind="attrs"
-          v-on="on"
-        >
-         mdi-login
-        </v-icon>
-      </template>
-      <span>This login was diactivated in this website due to the Hosting problem.</span>
-    </v-tooltip> -->
+                
    
-     <a href="api/auth/logout" v-if="$store.state.user">
-       <v-icon 
+     <a  v-if="$store.state.user" >
+       <v-icon v-on:click="handleLogout()"
         class="text-right text--text ml-15"
           
           v-bind="attrs"
           v-on="on"
+         
         >
          mdi-logout
         </v-icon>
+        
         
     </a>
      <router-link to=/indexpage v-else >
@@ -41,9 +31,11 @@
           
           v-bind="attrs"
           v-on="on"
+
         >
          mdi-login
         </v-icon>
+       
         
     </router-link>
                 
@@ -224,6 +216,7 @@
 </style>
 <script>
 export default {
+  
   data: () => ({
     drawer: false,
     items: [
@@ -242,5 +235,29 @@ export default {
       { title: "Projects", icon: "mdi-forum", url: "/projects" },
     ],
   }),
+  methods: {
+    
+  handleLogout() {
+    console.log("it works1")
+  this.$store.commit("setUser", null);
+   console.log("it works2")
+   
+    this.$http
+      .get("/api/auth/logout")
+      .then(() => {
+       
+        console.log('this is front')
+        console.log(this.$store.state)
+      //  console.log(this.$store.state.user)
+        console.log('this os end');
+        
+        
+        
+      })
+   
+  },
+  
+}
+   
 };
 </script>
