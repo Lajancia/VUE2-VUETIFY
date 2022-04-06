@@ -23,8 +23,20 @@
       </template>
       <span>This login was diactivated in this website due to the Hosting problem.</span>
     </v-tooltip> -->
-    <router-link to=/indexpage>
-       <v-icon
+   
+     <a href="api/auth/logout" v-if="$store.state.user">
+       <v-icon 
+        class="text-right text--text ml-15"
+          
+          v-bind="attrs"
+          v-on="on"
+        >
+         mdi-logout
+        </v-icon>
+        
+    </a>
+     <router-link to=/indexpage v-else >
+       <v-icon 
         class="text-right text--text ml-15"
           
           v-bind="attrs"
@@ -32,6 +44,7 @@
         >
          mdi-login
         </v-icon>
+        
     </router-link>
                 
                 <v-icon 
@@ -96,7 +109,7 @@
         </v-list-item>
         <v-list-item link>
           <v-list-item-icon>
-            <v-icon color="primary">mdi-forum</v-icon>
+            <v-icon color="primary">mdi-alpha-p-box</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
@@ -108,7 +121,7 @@
         </v-list-item>
         <v-list-item link>
           <v-list-item-icon>
-            <v-icon color="primary">mdi-forum</v-icon>
+            <v-icon color="primary">mdi-alpha-a-box</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
@@ -118,6 +131,19 @@
             <!-- <mdicon name="playstation" /> -->
           </v-list-item-content>
         </v-list-item>
+         <v-list-item link>
+          <v-list-item-icon>
+            <v-icon color="primary">mdi-file-document</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title color="text">
+              <router-link to=/documents>Documents</router-link>
+            </v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
+          </v-list-item-content>
+        </v-list-item>
+
 
       </v-list>
     </v-navigation-drawer>
