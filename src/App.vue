@@ -6,7 +6,9 @@
         <v-list-item-content>
           <v-list-item-title class="text--text" id="menu-font">
             <v-row
-              ><v-col v-if="$store.state.user">{{$store.state.user.nick}}</v-col>
+              ><v-col v-if="$store.state.user"> <a href="/indexpage" class="text--text">{{$store.state.user.nick}}</a>
+                
+                </v-col>
               <v-col v-else>Guest</v-col>
               <v-col
                 >
