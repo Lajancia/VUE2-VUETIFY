@@ -7717,6 +7717,11 @@
     "interpret" "^1.0.0"
     "rechoir" "^0.6.2"
 
+"shvl@^2.0.3":
+  "integrity" "sha512-V7C6S9Hlol6SzOJPnQ7qzOVEWUQImt3BNmmzh40wObhla3XOYMe4gGiYzLrJd5TFa+cI2f9LKIRJTTKZSTbWgw=="
+  "resolved" "https://registry.npmjs.org/shvl/-/shvl-2.0.3.tgz"
+  "version" "2.0.3"
+
 "side-channel@^1.0.4":
   "integrity" "sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw=="
   "resolved" "https://registry.npmjs.org/side-channel/-/side-channel-1.0.4.tgz"
@@ -8254,6 +8259,11 @@
     "loader-utils" "^1.1.0"
     "neo-async" "^2.6.0"
 
+"three@^0.129.0":
+  "integrity" "sha512-wiWio1yVRg2Oj6WEWsTHQo5eSzYpEwSBtPSi3OofNpvFbf26HFfb9kw4FZJNjII4qxzp0b1xLB11+tKkBGB1ZA=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.129.0.tgz"
+  "version" "0.129.0"
+
 "through@^2.3.6":
   "integrity" "sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU="
   "resolved" "https://registry.npmjs.org/through/-/through-2.3.8.tgz"
@@ -8671,6 +8681,13 @@
   "resolved" "https://registry.npmjs.org/vm-browserify/-/vm-browserify-1.1.2.tgz"
   "version" "1.1.2"
 
+"vue-3d-model@^1.4.0":
+  "integrity" "sha512-PXk2XG53Q8ft/3s+hQn/ca29vx/r9EafOtbZO2wdcuBifrgmmuWHN8H2OptqKxlrXlGQSfl7QjnjjsBMghXJ0g=="
+  "resolved" "https://registry.npmjs.org/vue-3d-model/-/vue-3d-model-1.4.0.tgz"
+  "version" "1.4.0"
+  dependencies:
+    "three" "^0.129.0"
+
 "vue-awesome-swiper@^3.1.3":
   "integrity" "sha512-E7suzkyApO8vNZbgdEnjSmnpsmQZyRvSVXJ7sey3XYwKPOkLhH3+GnHroBw+5PZIQXvWBwdCeQsPG1xQ1r1Rhg=="
   "resolved" "https://registry.npmjs.org/vue-awesome-swiper/-/vue-awesome-swiper-3.1.3.tgz"
@@ -8799,7 +8816,7 @@
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@*", "vue@^2 || ^3.0.0-0", "vue@^2.0.0", "vue@^2.5.17", "vue@^2.6.11", "vue@^2.6.12", "vue@^2.6.4", "vue@^3.0.0 || ^2.0.0":
+"vue@*", "vue@^2 || ^3.0.0-0", "vue@^2.0.0", "vue@^2.5.17", "vue@^2.6.11", "vue@^2.6.12", "vue@^2.6.4", "vue@^3.0.0 || ^2.0.0", "vue@>=2.0.0":
   "integrity" "sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-2.6.14.tgz"
   "version" "2.6.14"
@@ -8818,7 +8835,15 @@
   "resolved" "https://registry.npmjs.org/vuetify/-/vuetify-2.6.3.tgz"
   "version" "2.6.3"
 
-"vuex@^3.4.0":
+"vuex-persistedstate@^4.1.0":
+  "integrity" "sha512-3SkEj4NqwM69ikJdFVw6gObeB0NHyspRYMYkR/EbhR0hbvAKyR5gksVhtAfY1UYuWUOCCA0QNGwv9pOwdj+XUQ=="
+  "resolved" "https://registry.npmjs.org/vuex-persistedstate/-/vuex-persistedstate-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "deepmerge" "^4.2.2"
+    "shvl" "^2.0.3"
+
+"vuex@^3.0 || ^4.0.0-rc", "vuex@^3.4.0":
   "integrity" "sha512-ETW44IqCgBpVomy520DT5jf8n0zoCac+sxWnn+hMe/CzaSejb/eVw2YToiXYX+Ex/AuHHia28vWTq4goAexFbw=="
   "resolved" "https://registry.npmjs.org/vuex/-/vuex-3.6.2.tgz"
   "version" "3.6.2"

@@ -87,10 +87,13 @@
     </v-container>
   </body>
 </template>
+
 <script>
-export default {
-  components: {},
-};
+// import { ModelFbx } from "vue-3d-model";
+// export default {
+//   components: { ModelFbx },
+// };
+//
 </script>
 
 <style scoped>

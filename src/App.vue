@@ -10,28 +10,33 @@
               <v-col v-else>Guest</v-col>
               <v-col
                 >
-                <!-- <v-tooltip bottom> -->
-      <!-- <template v-slot:activator="{ on, attrs }">
-        <v-icon
+                
+   
+     <a  v-if="$store.state.user" >
+       <v-icon v-on:click="handleLogout()"
         class="text-right text--text ml-15"
           
           v-bind="attrs"
           v-on="on"
+         
         >
-         mdi-login
+         mdi-logout
         </v-icon>
-      </template>
-      <span>This login was diactivated in this website due to the Hosting problem.</span>
-    </v-tooltip> -->
-    <router-link to=/indexpage>
-       <v-icon
+        
+        
+    </a>
+     <router-link to=/indexpage v-else >
+       <v-icon 
         class="text-right text--text ml-15"
           
           v-bind="attrs"
           v-on="on"
+
         >
          mdi-login
         </v-icon>
+       
+        
     </router-link>
                 
                 <v-icon 
@@ -96,7 +101,7 @@
         </v-list-item>
         <v-list-item link>
           <v-list-item-icon>
-            <v-icon color="primary">mdi-forum</v-icon>
+            <v-icon color="primary">mdi-alpha-p-box</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
@@ -108,7 +113,7 @@
         </v-list-item>
         <v-list-item link>
           <v-list-item-icon>
-            <v-icon color="primary">mdi-forum</v-icon>
+            <v-icon color="primary">mdi-alpha-a-box</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
@@ -118,6 +123,19 @@
             <!-- <mdicon name="playstation" /> -->
           </v-list-item-content>
         </v-list-item>
+         <v-list-item link>
+          <v-list-item-icon>
+            <v-icon color="primary">mdi-file-document</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title color="text">
+              <router-link to=/documents>Documents</router-link>
+            </v-list-item-title>
+            <!-- <mdicon name="playstation" /> -->
+          </v-list-item-content>
+        </v-list-item>
+
 
       </v-list>
     </v-navigation-drawer>
@@ -198,6 +216,7 @@
 </style>
 <script>
 export default {
+  
   data: () => ({
     drawer: false,
     items: [
@@ -216,5 +235,28 @@ export default {
       { title: "Projects", icon: "mdi-forum", url: "/projects" },
     ],
   }),
+  methods: {
+  handleLogout() {
+    console.log("it works1")
+  this.$store.commit("setUser", null);
+   console.log("it works2")
+   
+    this.$http
+      .get("/api/auth/logout")
+      .then(() => {
+       
+        console.log('this is front')
+        console.log(this.$store.state)
+      //  console.log(this.$store.state.user)
+        console.log('this os end');
+        
+        
+        
+      })
+   
+  },
+  
+}
+   
 };
 </script>
