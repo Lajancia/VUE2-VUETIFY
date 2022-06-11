@@ -67,16 +67,21 @@
                   </v-btn>
                 </a>
 
-                <div class="font-weight-light grey--text text-h6 mb-2">
+                <div id="text" class="font-weight-light grey--text text-h6 mb-2">
                   COMMON MAGAZINE
                 </div>
-                <h3 class="text-h6 font-weight-light accent--text mb-2">
-                  웹사이트 개발자 인턴
-                </h3>
-                <div class="font-weight-light text-h8 mb-2">
-                  Our Vintage kitchen utensils delight any chef.<br />
-                  Made of bamboo by hand
-                </div>
+                <h3 id="text" class="text-h6 font-weight-light accent--text mb-2">
+                웹사이트 개발자 인턴
+              </h3>
+              <div id="text" class="font-weight-light text-h8 mb-2">
+                회사명 : CommOn Magazine
+                <br />
+                기간 : 2021-11 ~ 2022-5
+                <br />
+                주요 업무 : 웹사이트 제작 및 배포, 도메인 및 서버 관리
+                <br />
+                사용 프로그램 : VScode, Vue.js, Hostinger, Github, Notion
+              </div>
               </v-card-text>
             </v-card>
           </v-hover>
@@ -110,13 +115,13 @@
                   </v-btn>
                 </a>
 
-                <div class="font-weight-light grey--text text-h6 mb-2">
+                <div id="text" class="font-weight-light grey--text text-h6 mb-2">
                   PORTFOLIO WEBSITE
                 </div>
-                <h3 class="text-h6 font-weight-light accent--text mb-2">
+                <h3 id="text" class="text-h6 font-weight-light accent--text mb-2">
                   풀스텍 웹사이트 개발 및 배포
                 </h3>
-                <div class="font-weight-light text-h8 mb-2">
+                <div id="text" class="font-weight-light text-h8 mb-2">
                   사용 프로그램 : vue.js, node.js, webpack, WebGL, Three.js,
                   VScode, Hostinger Shared Hosting
                   <br />
@@ -162,13 +167,13 @@
                   </v-btn></a
                 >
 
-                <div class="font-weight-light grey--text text-h6 mb-2">
+                <div id="text" class="font-weight-light grey--text text-h6 mb-2">
                   CAPSTONE DESIGN
                 </div>
-                <h3 class="text-h6 font-weight-light accent--text mb-2">
+                <h3 id="text" class="text-h6 font-weight-light accent--text mb-2">
                   Micro-Frontend UI/UX 프레임워크 구축
                 </h3>
-                <div class="font-weight-light text-h8 mb-2">
+                <div id="text" class="font-weight-light text-h8 mb-2">
                   프로젝트 주관 : 한국외국어대학교 기업 연계
                   <br />
                   협업 기업 : 애버커스
@@ -190,7 +195,9 @@
         </v-col
       >
       <v-row no-gutters>
-        <v-col id="main1" class="text--text" cols="12">SKILLS</v-col>
+        <v-col cols="12" sm="6">
+           <v-col id="main1" class="text--text" cols="12">SKILLS</v-col>
+           <v-row no-gutters>
         <v-col cols="12"
           ><span
             ><v-btn class="ma-2" outlined color="accent">
@@ -209,7 +216,8 @@
             ><v-btn class="ma-2" outlined color="accent"> NODE.JS </v-btn></span
           ><span
             ><v-btn class="ma-2" outlined color="accent"> MYSQL </v-btn></span
-          ></v-col
+          >
+          </v-col
         >
         <v-col cols="12"
           ><span
@@ -221,10 +229,10 @@
             ><v-btn class="ma-2" outlined color="accent"> NOTION </v-btn></span
           ></v-col
         >
-      </v-row>
-    </v-row>
-    <v-row class="my-5" no-gutters>
-      <v-col id="main1" class="text--text text-center" col="12">CONTACT</v-col>
+        </v-row>
+        </v-col>
+         <v-col cols="12" sm="6">
+             <v-col id="main1" class="text--text text-center" col="12">CONTACT</v-col>
       <v-col cols="12" class="text-center"
         ><v-btn
           class="ma-2"
@@ -234,6 +242,12 @@
           Send Mail
         </v-btn></v-col
       >
+         </v-col>
+       
+      </v-row>
+    </v-row>
+    <v-row class="my-5" no-gutters>
+    
     </v-row>
 
     <a href="https://lajancia.github.io/"
@@ -401,9 +415,10 @@ window.onload = function () {
   margin-left: 15px;
   margin-right: 15px;
 }
-#card{
+#text{
   font-family: "Do Hyeon", sans-serif;
 }
+
 #main1 {
   font-size: 60px;
 }

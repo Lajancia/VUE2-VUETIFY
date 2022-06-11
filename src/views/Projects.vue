@@ -193,8 +193,13 @@
                 웹사이트 개발자 인턴
               </h3>
               <div class="font-weight-light text-h8 mb-2">
-                Our Vintage kitchen utensils delight any chef.<br />
-                Made of bamboo by hand
+                회사명 : CommOn Magazine
+                <br />
+                기간 : 2021-11 ~ 2022-5
+                <br />
+                주요 업무 : 웹사이트 제작 및 배포, 도메인 및 서버 관리
+                <br />
+                사용 프로그램 : VScode, Vue.js, Hostinger, Github, Notion
               </div>
             </v-card-text>
           </v-card>
