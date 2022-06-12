@@ -8,6 +8,7 @@
               <h1 class="text-6xl py-2 accent--text">User Information</h1>
               <p class="text-4xl" color="accent">ID : {{ user.email }}</p>
               <p class="text--accent text-4xl">Name : {{ user.nick }}</p>
+              <p class="text--accent text-4xl">ID number : {{ user.id }}</p>
               <v-row no-gutters>
                 <v-col cols="12" align="center">
                   <v-card>
@@ -26,32 +27,19 @@
                           ></textarea>
                         </div>
                       </v-card>
-                      <!-- <v-card>
-                        <div class="img-preview">
-                          <img
-                            id="img-preview"
-                            src=""
-                            style="display: none"
-                            width="250"
-                            alt="미리보기"
-                          />
-                          <input id="img-url" type="hidden" name="url" />
-                        </div>
-                      </v-card> -->
 
                       <div>
-                        <!-- <label id="img-label" for="img">사진 업로드</label>
-                        <input id="img" type="file" accept="image/*" /> -->
                         <button id="twit-btn" type="submit" class="btn">
                           짹짹
                         </button>
                       </div>
                     </form>
                   </v-card>
-                  <v-card>
-                    <!-- <v-for twit in twits>
-                      <div class="twit-content">{{ twit.content }}</div>
-                    </v-for> -->
+                  <v-card v-for="i in this.data" v-bind:key="i">
+                    <div v-if="i.UserId === user.id">
+                      {{ i.content }}
+                      {{ i.UserId }}
+                    </div>
                   </v-card>
                 </v-col>
               </v-row>
@@ -71,11 +59,6 @@
                 <a href="/join" class="ml-3 text--text">Join</a>
               </form>
             </div>
-          </div>
-        </v-card>
-        <v-card>
-          <div v-for="i in this.contents" v-bind:key="i">
-            {{ i }}
           </div>
         </v-card>
       </v-col>
@@ -108,20 +91,25 @@ export default {
       .get("/api/page")
       .then((res) => {
         // const user = res.data.user;
-        const post = res;
+        const twit = res;
         // console.log(user);
         console.log("post");
-        console.log(post.data.twits);
-        const contents = post.data.twits;
+        console.log(twit.data.twits);
+        const contents = twit.data.twits;
+        // const contents = post.data;
         console.log(contents);
-        // if (user) {
-        //   this.$store.commit("setUser", user);
-        // }
+        console.log(contents[0]);
+
+        this.data = contents;
       })
       .catch((err) => {
         console.error(err);
       });
   },
+  data() {
+    return { data: [] };
+  },
+
   computed: {
     user() {
       return this.$store.getters.user;
