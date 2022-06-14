@@ -26,20 +26,22 @@
                             maxlength="140"
                           ></textarea>
                         </div>
-                      </v-card>
-
-                      <div>
                         <button id="twit-btn" type="submit" class="btn">
                           짹짹
                         </button>
-                      </div>
+                      </v-card>
                     </form>
                   </v-card>
                   <v-card v-for="i in this.data" v-bind:key="i">
-                    <div v-if="i.UserId === user.id">
+                    <div>
                       {{ i.content }}
                       {{ i.UserId }}
                     </div>
+                    <form action="api/post/delete" method="post">
+                      <button id="twit-btn" type="submit" class="btn">
+                        delete
+                      </button>
+                    </form>
                   </v-card>
                 </v-col>
               </v-row>
@@ -78,7 +80,6 @@ export default {
         console.log(user);
         console.log("post");
         console.log(post);
-
         if (user) {
           this.$store.commit("setUser", user);
         }
@@ -86,7 +87,6 @@ export default {
       .catch((err) => {
         console.error(err);
       });
-
     this.$http
       .get("/api/page")
       .then((res) => {
@@ -99,7 +99,6 @@ export default {
         // const contents = post.data;
         console.log(contents);
         console.log(contents[0]);
-
         this.data = contents;
       })
       .catch((err) => {
@@ -109,7 +108,6 @@ export default {
   data() {
     return { data: [] };
   },
-
   computed: {
     user() {
       return this.$store.getters.user;
