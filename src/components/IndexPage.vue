@@ -33,15 +33,21 @@
                     </form>
                   </v-card>
                   <v-card v-for="i in this.data" v-bind:key="i">
-                    <div>
-                      {{ i.content }}
-                      {{ i.UserId }}
-                    </div>
-                    <form action="api/post/delete" method="post">
-                      <button id="twit-btn" type="submit" class="btn">
+                    <div v-if="i.UserId == user.id">
+                      <div>
+                        {{ i.content }}
+                        {{ i.UserId }}
+                      </div>
+
+                      <button
+                        @click="deletefunc(i.id)"
+                        id="twit-btn"
+                        type="submit"
+                        class="btn"
+                      >
                         delete
                       </button>
-                    </form>
+                    </div>
                   </v-card>
                 </v-col>
               </v-row>
@@ -98,12 +104,21 @@ export default {
         const contents = twit.data.twits;
         // const contents = post.data;
         console.log(contents);
-        console.log(contents[0]);
+        console.log(contents[0].id);
         this.data = contents;
+        console.log(this.data[0].id);
       })
       .catch((err) => {
         console.error(err);
       });
+  },
+  methods: {
+    deletefunc(id) {
+      this.$http.post(`/api/post/delete/${id}`).then((res) => {
+        console.log(res);
+      });
+      window.location.reload("/indexpage");
+    },
   },
   data() {
     return { data: [] };
