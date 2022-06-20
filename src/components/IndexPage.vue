@@ -25,6 +25,11 @@
                             name="content"
                             maxlength="140"
                           ></textarea>
+                          <textarea
+                            name="cost"
+                            id="twit"
+                            maxlength="100"
+                          ></textarea>
                         </div>
                         <button id="twit-btn" type="submit" class="btn">
                           짹짹
@@ -36,7 +41,7 @@
                     <div v-if="i.UserId == user.id">
                       <div>
                         {{ i.content }}
-                        {{ i.UserId }}
+                        {{ i.cost }}
                       </div>
 
                       <button
@@ -117,7 +122,7 @@ export default {
       this.$http.post(`/api/post/delete/${id}`).then((res) => {
         console.log(res);
       });
-      window.location.reload("/indexpage");
+      window.location.reload();
     },
   },
   data() {
