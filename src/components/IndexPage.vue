@@ -13,7 +13,7 @@
                 <v-col cols="12" align="center">
                   <v-card>
                     <form
-                      id="twit-form"
+                      @submit.prevent="postfunc()"
                       action="api/post"
                       method="post"
                       enctype="multipart/form-data"
@@ -22,11 +22,11 @@
                         <div class="input-group">
                           <textarea
                             id="twit"
-                            name="content"
+                            v-model="content"
                             maxlength="140"
                           ></textarea>
                           <textarea
-                            name="cost"
+                            v-model="cost"
                             id="twit"
                             maxlength="100"
                           ></textarea>
@@ -82,6 +82,63 @@
 <script>
 // import axios from "axios";
 export default {
+  methods: {
+    deletefunc(id) {
+      this.$http.post(`/api/post/delete/${id}`).then((res) => {
+        console.log(res);
+      });
+      this.$http
+        .get("/api/page")
+        .then((res) => {
+          // const user = res.data.user;
+          const twit = res;
+          // console.log(user);
+          console.log("post");
+          console.log(twit.data.twits);
+          const contents = twit.data.twits;
+          // const contents = post.data;
+          console.log(contents);
+          console.log(contents[0].id);
+          this.data = contents;
+          console.log(this.data[0].id);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+    postfunc() {
+      this.$http.post(`/api/post`).then((res) => {
+        console.log(res);
+      });
+      this.$http
+        .get("/api/page")
+        .then((res) => {
+          // const user = res.data.user;
+          const twit = res;
+          // console.log(user);
+          console.log("post");
+          console.log(twit.data.twits);
+          const contents = twit.data.twits;
+          // const contents = post.data;
+          console.log(contents);
+          console.log(contents[0].id);
+          this.data = contents;
+          console.log(this.data[0].id);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    },
+  },
+  data() {
+    return { data: [], content_data: "", cost_data: 0, UserId: 0 };
+  },
+
+  computed: {
+    user() {
+      return this.$store.getters.user;
+    },
+  },
   created() {
     this.$http
       .get("/api/auth/login")
@@ -116,22 +173,6 @@ export default {
       .catch((err) => {
         console.error(err);
       });
-  },
-  methods: {
-    deletefunc(id) {
-      this.$http.post(`/api/post/delete/${id}`).then((res) => {
-        console.log(res);
-      });
-      window.location.reload();
-    },
-  },
-  data() {
-    return { data: [] };
-  },
-  computed: {
-    user() {
-      return this.$store.getters.user;
-    },
   },
 };
 </script>
