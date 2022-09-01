@@ -101,6 +101,11 @@
           </router-link>
         </v-col>
       </v-row>
+      <a href="/Gallery/Rabbit"
+        ><v-btn fab dark large color="text" fixed right bottom>
+          <v-icon dark> mdi-pencil </v-icon></v-btn
+        ></a
+      >
     </v-container>
   </div>
 </template>
